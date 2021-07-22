@@ -1,0 +1,10 @@
+<svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" fill="none">
+
+ <g>
+  <title>Layer 1</title>
+  <circle id="svg_1" stroke-width="2" stroke="#BE1E2D" transform="rotate(-180 25 25)" r="24" cy="25" cx="25"/>
+  <g>
+   <path stroke-width="2" stroke="#BE1E2D" d="m20,27.5l5,-5l5,5"/>
+  </g>
+ </g>
+</svg>

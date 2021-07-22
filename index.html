@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Sapore</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+    
+</head>
+
+<body style="background-color: #E5E5E5;">
+
+    <header id="bg">
+        <div class="container hd-con">          
+
+            <div class="row f-row">                
+                <div class="d-flex fr-col">
+                    <div class="bg-menu">                        
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="menu-icon" src="icons/menu-btn.svg">
+                                <h4>Menu</h4>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                              <li><a class="dropdown-item" href="#">QUEM SOMOS</a></li>
+                              <li><a class="dropdown-item" href="#">A SAPORE</a></li>
+                              <li><a class="dropdown-item" href="#">CLIENTES</a></li>                              
+                            </ul>
+                        </div>                                            
+                    </div>
+                    <div class="bg-logo">
+                        <a href="#" class="navbar-logo">
+                            <img src="images/logo.svg">
+                        </a>  
+                    </div>
+                    <div class="cvd-col d-flex">
+                        <a class="cvd-info" href="">
+                            <label class="lb1">COVID-19.&nbsp;</label><label class="lb2"> Nossas ações</label>
+                        </a>
+                    </div>
+                    <div id="lan-col" class="">                        
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="menu-icon-1" src="./icons/dd-arrow-down.svg">
+                                <img class="menu-icon-2" src="./icons/flag-br.svg">
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                              <li><a class="dropdown-item" href="#">Pt-Br<img class="menu-icon-2" src="./icons/flag-br.svg"></a></li>
+                              <li><a class="dropdown-item" href="#">En<img class="menu-icon-2" src="./icons/flag-uk.png"></a></li>                              
+                            </ul>
+                        </div>                     
+                    </div>
+                  </div>
+            </div> 
+
+            <div class="row sec-row">
+                <div class="d-flex justify-content-center">
+                    <ul class="nav-list">
+                        <li>
+                            <label>VOCÊ ESTÁ EM</label>
+                        </li>
+                        <li>
+                            <label>></label>
+                        </li>
+                        <li>
+                            <label>HOME</label>
+                        </li>
+                        <li>
+                            <label>></label>
+                        </li>
+                        <li>
+                            <label class="nav-focus">SERVIÇOS</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row trd-row">
+                <div class="d-flex justify-content-center">
+                    <h1>Serviços</h1>
+                </div>
+            </div>
+        </div>        
+    </header>
+
+    <section id="briefing">
+        <div class="container">
+            <div class="row">
+                <div class="d-flex justify-content-center col-brief">
+                    <p>Em nossos restaurantes, oferecemos opções de cardápios diferenciados para atender todos os gostos.<br><br>
+                    Dessa forma, contamos com refeições das linhas: Sabor de Casa, Grill à la minuta, Cozinha Show, Fast Food, Grill Express, Da terra, Viva Leve. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="presentation">
+        <div class="container pres-con">
+            <div class="row" >
+                <!-- 
+               <div class="col-1">
+                    <button id="left" onclick="teste(this, this.id)">E</button>
+                </div> -->
+                <div class="col-12 pres-nav">
+                    <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+                        <div class="col-1 btn-left-col">
+                            <button class="btn-nav-left" id="left" onclick="teste(this, this.id)"></button>
+                        </div>
+
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link nl-1 active" id="sabor-tab" data-bs-toggle="tab" data-bs-target="#sabor" type="button" role="tab" aria-controls="sabor" aria-selected="true">Sabor de Casa</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link nl-2" id="grill-tab" data-bs-toggle="tab" data-bs-target="#grill" type="button" role="tab" aria-controls="grill" aria-selected="false">Grill à La Minuta</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link nl-3" id="cozinha-tab" data-bs-toggle="tab" data-bs-target="#cozinha" type="button" role="tab" aria-controls="cozinha" aria-selected="false">Cozinha Show</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link nl-4" id="fast-tab" data-bs-toggle="tab" data-bs-target="#fast" type="button" role="tab" aria-controls="fast" aria-selected="false">Fast Food</button>
+                        </li>
+
+                        <div class="col-1 btn-right-col">                    
+                            <button class="btn-nav-right" id="right" onclick="teste(this, this.id)"></button>
+                        </div>
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="sabor" role="tabpanel" aria-labelledby="sabor-tab">
+                            <div class="pres-info">
+                                <h2>Sabor de Casa</h2>
+                                <div >
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="grill" role="tabpanel" aria-labelledby="grill-tab">
+                            <div class="pres-info">
+                                <h2>Grill à La Minuta</h2>
+                                <div >
+                                    <p>Uma opção rápida para o cliente que busca comodidade e praticidade na hora da refeição. A principal característica do Grill à la minuta é a oferta de variados e irresistíveis grelhados.</p>
+                                    <p>O serviço também inclui acompanhamentos, como: batata frita, polenta frita, legumes no vapor e farofa.</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="cozinha" role="tabpanel" aria-labelledby="cozinha-tab">
+                            <div class="pres-info">
+                                <h2>Cozinha Show</h2>
+                                <div >
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="fast" role="tabpanel" aria-labelledby="fast-tab">
+                            <div class="pres-info">
+                                <h2>Fast Food</h2>
+                                <div >
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                      </div>
+                </div>
+                <!-- 
+                <div class="col-1">                    
+                    <button id="right" onclick="teste(this, this.id)">D</button>
+                </div>
+                -->
+            </div>
+            
+            
+        </div>
+        
+        
+
+        <script>
+
+            function teste(elem, side){
+                var position = 0;
+                var a = document.getElementsByClassName('nav-link');
+                var b = document.getElementsByClassName('tab-pane');
+
+                for(i = 0; i < a.length; i++){ //get tab active tab position
+                    if(a[i].classList.contains("active")){
+                        position = i;
+                    }
+                }
+
+                if(side == "left"){
+                    if(position == 0){
+                        a[0].classList.remove('active');
+                        a[3].classList.add('active');
+
+                        b[0].classList.remove('show', 'active');
+                        b[3].classList.add('show', 'active');
+                    }
+                    else{
+                        a[position].classList.remove('active');
+                        a[position-1].classList.add('active');
+
+                        b[position].classList.remove('show', 'active');
+                        b[position-1].classList.add('show', 'active');
+                    }
+                }
+                else{
+                    if(position == 3){
+                        a[3].classList.remove('active');
+                        a[0].classList.add('active');
+
+                        b[3].classList.remove('show', 'active');
+                        b[0].classList.add('show', 'active');
+                    }
+                    else{
+                        a[position].classList.remove('active');
+                        a[position+1].classList.add('active');
+
+                        b[position].classList.remove('show', 'active');
+                        b[position+1].classList.add('show', 'active');
+                    }
+                }
+
+               
+            }
+
+        </script>
+    </section>
+    
+    
+
+
+    <section id="services">
+        <div class="container cn-serv">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <div class="div-1">Lanchonete Delivery</div>
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="d-flex justify-content-start serv-info">
+                            <div class="serv-img">
+                                <div class="row">
+                                    <div class="columm">
+                                        <img src="./images/img_sapore 1.svg" alt="">
+                                        <img class="square-position" src="./images/yellow-rec.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="serv-text">
+                                <div class="serv-p">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                                </div>
+                                <div class="serv-link">
+                                    <a href="">Solicite um orçamento</a>
+                                    <img src="./icons/serv-direct.svg">
+                                </div>    
+                            </div>
+                        </div>
+                        
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item md-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <div class="div-2">Sapore para Home Office</div>                      
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="d-flex justify-content-start serv-info">
+                            <div class="serv-img">
+                                <div class="row">
+                                    <div class="columm">
+                                        <img src="./images/img_sapore 1.svg" alt="">
+                                        <img class="square-position" src="./images/yellow-rec.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="serv-text">
+                                <div class="serv-p">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>                                    
+                                </div>
+                                <div class="serv-link">
+                                    <a href="">Solicite um orçamento</a>
+                                    <img src="./icons/serv-direct.svg">
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <div class="div-3">Unifacilities Sapore</div>
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="d-flex justify-content-start serv-info">
+                            <div class="serv-img">
+                                <div class="row">
+                                    <div class="columm">
+                                        <img src="./images/img_sapore 1.svg" alt="">
+                                        <img class="square-position" src="./images/yellow-rec.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="serv-text">
+                                <div class="serv-p">
+                                    <p>A Unifacilities entrega tranquilidade, economia de tempo e comodidade ao oferecer serviços nos mais variados segmentos.</p>
+                                    <p>Com o compromisso de atender com máxima eficiência operacional e os melhores indicadores de performance, aliamos: tecnologia, processos, soluções diferenciadas e equipes especializadas para garantir aos nossos clientes a melhor experiência possível dentro da instituição​.</p>
+                                    <p>As operações da Unifacilities e o know-how da Sapore favorecem a oferta de serviços integrados a empresas, hospitais, escolas, universidades, escritórios, fábricas, clínicas, empresas de onshore e offshore.</p>
+                                    <p>Entre os serviços disponíveis, oferecemos: serviços de limpeza, recepção, portaria com controlador de acesso, serviços de jardinagem, manutenção predial, suporte administrativo, gestão de resíduos, mensageria e malote, chaveiro, bibliotecário, enfermagem, gestão de uniformes, motorista, entre outros.</p>
+                                </div>
+                                <div class="serv-link">
+                                    <a href="">Solicite um orçamento</a>
+                                    <img src="./icons/serv-direct.svg">
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+        </div>
+        <script>
+            function changeArrow(elem, num){
+                alert(num);
+            }
+        </script>
+    </section>
+
+    <section id="info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Contato</h4>
+                    <ul class="col-info-l navbar-nav">
+                        <li><a href="">Trabalhe conosco</a></li>
+                        <li><a href="">Conheça nossas vagas</a></li>
+                        <li><a href="">Fale conosco</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Solicite uma proposta</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Serviços</h4>
+                    <ul class="col-info-l navbar-nav">
+                        <li><a href="">Facilities</a></li>
+                        <li><a href="">Honest Market</a></li>
+                        <li><a href="">Carrinho Delivery</a></li>
+                        <li><a href="">Aplicativos</a></li>
+                        <li><a href="">Home Office</a></li>
+                        <li><a href="">Sapore Inbox</a></li>
+                        <li><a href="">Projetos/Arquitetura</a></li>
+                        <li><a href="">Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Institucional</h4>
+                    <ul class="col-info-l navbar-nav">
+                        <li><a href="">Quem somos</a></li>
+                        <li><a href="">A Sapore</a></li>
+                        <li><a href="">Responsabilidade</a></li>
+                        <li><a href="">Canal Ético</a></li>
+                        <li><a href="">Prêmios e certificações</a></li>
+                        <li><a href="">IOS + Qualidade do alimento</a></li>
+                        <li><a href="">Cases</a></li>
+                        <li><a href="">Clientes</a></li>
+                        <li><a href="">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="footer">
+        <div class="d-flex">
+            <div class="lateral-bar"></div>
+        <div class="container foot-con">
+            <div class="row first-row">
+                <div class="col-md-4 g-logo">
+                    <a href="#">
+                        <img class="img" src="./images/Group.svg">
+                    </a>
+                </div>           
+                <div class="col-md-4 policy-info">
+                        <a href="">Política de Privacidade</a>
+                        <a>|</a>
+                        <a href="">Política de Cookies</a>
+                </div> 
+                <div class="col-md-4 contact">
+                    <div>
+                        <img src="./images/w-logo.svg">
+                        <h4>+55 (19) 3738-4000</h4>
+                    </div>
+                </div>    
+            </div>
+
+            <div class="row-divider">
+                <div class="divider"></div>
+            </div>
+
+            <div class="row last-row">                
+                <div class="col-md-6 col-icons">
+                    <ul>
+                        <li>
+                            <a href=""><img class="sm-icon" src="./icons/ig-icon.svg"></a>
+                        </li>
+                        <li>
+                            <a href=""><img class="sm-icon" src="./icons/fb-icon.svg"></a>
+                        </li>
+                        <li>
+                            <a href=""><img class="sm-icon" src="./icons/li-icon.svg"></a>
+                        </li>
+                        <li>
+                            <a href=""><img class="sm-icon" src="./icons/yt-icon.svg"></a>
+                        </li>                        
+                    </ul>                  
+                </div>
+
+                <div class="col-md-6 col-tm">
+                    <ul class="tm-info">
+                        <li>Todos os direitos reservados © 2021 Sapore - Fazendo diferente</li>
+                        <li class="divisor">|</li>
+                        <li class="o2tm">Criação de sites <img class="mg-logo" src="./images/m-group.svg"></li>
+                    </ul>
+                </div> 
+                               
+            </div>
+            <div class="d-flex justify-content-end chat-btn-row ">
+                <div class="btn-chat">                    
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        
+    </section>
+
+    
+
+
+</body>
+</html>
